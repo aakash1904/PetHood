@@ -8,33 +8,14 @@
 .ptext{
 	font-family: 'Ubuntu', sans-serif;
 	text-transform: uppercase;
-	color: white;
+	color: grey;
 	text-align: center;
     letter-spacing: 6px;
     
     position: relative;
 }
-/* h3,h2,h1{
-    animation: text 3s 1;
-}
-@keyframes text{
-    0%{
-        color: black;
-        margin-bottom: -40px;
-        
-    }
-    30%{
-        letter-spacing: 25px;
-        margin-bottom: -40px;
-    }
-    85%{
-        letter-spacing: 8px;
-        margin-bottom: -40px;
-    }
-} */
 .ptext {
 	padding-top:10%;
-	color: #f0f0f0;
 }
 
 .ptext h1 span{
@@ -88,4 +69,7 @@ b{
 }
 .main_head{
     margin-top: 2%;
+}
+.quote-mobile{
+    margin-top: 23%;
 }
