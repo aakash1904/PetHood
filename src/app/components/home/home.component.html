@@ -1,10 +1,15 @@
 <div class="background">
-        <div class="quote">
+        <div class="quote" *ngIf="windowWidth > 1024">
                 <h3>
                     They also need <span><b>Love!!</b></span>
                 </h3>
         </div>
     <div class="ptext">
+            <div class="quote-mobile" *ngIf="windowWidth <= 1024">
+                    <h3>
+                        They also need <span><b>Love!!</b></span>
+                    </h3>
+            </div>
         <a class="join btn btn-default section-btn" data-toggle="modal" routerLink="/register">
       JOIN NOW
     </a>
