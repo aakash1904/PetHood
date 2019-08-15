@@ -1,0 +1,54 @@
+.card{
+    margin-left: 2%;
+    border-radius: 5px;
+    height: 250px;
+    width: 250px;
+    align-self: center;
+    float: left;
+    background-color: #fafafa;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    color: rgb(68, 67, 67);
+}
+.card,.quote{
+    animation: animate 2s 1;
+}
+@keyframes animate{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.background{
+    background-size: 100%;   
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: #F2F2F2;
+}
+.quote{
+    padding-top: 3%;
+    font-family: 'Ubuntu', sans-serif;
+	text-transform: uppercase;
+	color: rgb(143, 139, 139);
+	text-align: center;
+    letter-spacing: 6px;
+    
+    position: relative;
+}
+b{
+    color: orange;
+}
+.links{
+    align-self: center;
+    margin-top: 5%;
+}
+.container{
+    padding: 9%;
+}
+.card:hover{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    background-color: orange;
+    color: #F2F2F2;
+}
