@@ -15,8 +15,8 @@ export class SigninHomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  cardClick(){
-    this.router.navigate(['home']);
+  cardClick() {
+    this.router.navigate(['track']);
   }
-  
+
 }

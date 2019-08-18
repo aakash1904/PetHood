@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { SigninHomeComponent } from './components/signin-home/signin-home.component';
 import { LoginComponent } from './components/login/login.component';
 import { UserService } from './services/user.service';
+import { TrackComponent } from './components/track/track.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,17 @@ import { UserService } from './services/user.service';
     NavigationTopComponent,
     RegisterComponent,
     SigninHomeComponent,
-    LoginComponent
+    LoginComponent,
+    TrackComponent
   ],
   imports: [
     BrowserModule,
     HomeroutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey: ''
+    })
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

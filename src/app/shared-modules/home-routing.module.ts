@@ -4,16 +4,18 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from '../components/home/home.component';
 import { SigninHomeComponent } from '../components/signin-home/signin-home.component';
 import { LoginComponent } from '../components/login/login.component';
+import { TrackComponent } from '../components/track/track.component';
 
 
 const routes: Routes = [
+    {path: '', redirectTo: 'home', pathMatch: 'full'},
     {
         path: 'home',
         component: HomeComponent
     },
     {
       path: 'login',
-      component: LoginComponent 
+      component: LoginComponent
     },
     {
       path: 'register',
@@ -24,10 +26,9 @@ const routes: Routes = [
       component: SigninHomeComponent
     },
     {
-    path: '',
-    component: HomeComponent
+      path: 'track',
+      component: TrackComponent
     }
-
 ];
 
 @NgModule({
