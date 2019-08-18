@@ -7,13 +7,18 @@ import { HomeComponent } from './components/home/home.component';
 import { NavigationTopComponent } from './components/navigation-top/navigation-top.component';
 import { RegisterComponent } from './components/register/register.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SigninHomeComponent } from './components/signin-home/signin-home.component';
+import { LoginComponent } from './components/login/login.component';
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavigationTopComponent,
-    RegisterComponent
+    RegisterComponent,
+    SigninHomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

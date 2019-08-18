@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-signin-home',
@@ -8,11 +9,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class SigninHomeComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute,
+  constructor(private route: ActivatedRoute, private userService : UserService ,
     private router: Router) { }
 
   ngOnInit() {
   }
+
   cardClick(){
     this.router.navigate(['home']);
   }
